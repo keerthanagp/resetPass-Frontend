@@ -32,8 +32,8 @@ import axios from "axios"
             return false
         }
         try{
-
-        const response = await axios.post(`https://passwordreset1.herokuapp.com/resetPassword/${id}/${token}`,{
+           
+        const response = await axios.post(`http://localhost:3000/resetPassword/${id}/${token}`,{
             password:password
         })
         console.log(response)
@@ -66,7 +66,7 @@ import axios from "axios"
                                 <p className="error" >{err}</p>
                                 </div>
                                 <div className="d-flex justify-content-center ">
-                                    <Button  type="submit" onClick={handleSubmit} >Change </Button>
+                                    <Button  type="submit" onClick={handleSubmit}>Change </Button>
                                 </div>
                             </form>
                             <h5 className="text-dark">{info}</h5>

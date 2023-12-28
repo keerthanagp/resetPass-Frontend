@@ -1,4 +1,3 @@
-
 import { useContext } from "react"
 import { AppContext } from "../../App"
 import {Link} from "react-router-dom"
@@ -13,7 +12,7 @@ export default function Protected()
             <div className="container justify-content-center">
                 <div className="row">
                     <div className="col">
-                        <h1>Welcome to Protected Page</h1>
+                        <h1>Welcome to Our Site...</h1>
                     </div>
                 </div>
             </div>
